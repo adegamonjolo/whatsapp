@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/webhook', methods=['GET', 'POST'])
 def webhook():
     if request.method == 'GET':
-        verify_token = 'meu_token_secreto'
+        verify_token = 'tokenosvail7752'
         mode = request.args.get("hub.mode")
         token = request.args.get("hub.verify_token")
         challenge = request.args.get("hub.challenge")
